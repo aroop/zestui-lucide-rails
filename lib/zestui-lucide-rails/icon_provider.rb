@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-module LucideRails
+module ZestuiLucideRails
   module IconProvider
     module_function
 
     def icon(named)
-      send("provide_from_#{LucideRails.provider}", named)
+      send("provide_from_#{ZestuiLucideRails.provider}", named)
     end
 
     def provide_from_filesystem(named)
-      file = LucideRails::GEM_ROOT.join("icons", "stripped", "#{named}.svg")
+      file = ZestuiLucideRails::GEM_ROOT.join("icons", "stripped", "#{named}.svg")
       raise ArgumentError, "Unknown icon #{named}" unless file.exist?
 
       File.read(file)
@@ -25,7 +25,7 @@ module LucideRails
     def memory
       return @memory if @memory
 
-      file_path = LucideRails::GEM_ROOT.join("icons/stripped.bin.gz")
+      file_path = ZestuiLucideRails::GEM_ROOT.join("icons/stripped.bin.gz")
       data = ActiveSupport::Gzip.decompress(File.read(file_path))
       @memory = data.split("\x00").to_h { |x| x.split(",", 2) }
     end

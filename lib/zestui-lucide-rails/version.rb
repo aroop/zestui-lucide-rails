@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module LucideRails
+module ZestuiLucideRails
   VERSION = "0.2.0"
 end

@@ -16,7 +16,7 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
     - spec/**/**.rb
-    - lucide-rails.gemspec
+    - zestui-lucide-rails.gemspec
 
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
@@ -31,7 +31,7 @@ Metrics/MethodLength:
 
 Naming/FileName:
   Exclude:
-    - lib/lucide-rails.rb
+    - lib/zestui-lucide-rails.rb
 
 Style/Documentation:
   Enabled: false

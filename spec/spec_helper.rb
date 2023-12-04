@@ -12,7 +12,7 @@ Combustion.initialize! :action_controller, :action_view
 
 require "rspec/rails"
 
-require "lucide-rails"
+require "zestui-lucide-rails"
 require "byebug"
 
 RSpec.configure do |config|

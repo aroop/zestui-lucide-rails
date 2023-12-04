@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-module LucideRails
+module ZestuiLucideRails
   module RailsHelper
-    def lucide_icon(named, **options)
+    def zui_lucide_icon(named, **options)
       content_tag(:svg,
                   IconProvider.icon(named).html_safe,
-                  LucideRails.default_options.merge(**options))
+                  ZestuiLucideRails.default_options.merge(**options))
     end
   end
 end

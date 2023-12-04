@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/lucide-rails/version"
+require_relative "lib/zestui-lucide-rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "lucide-rails"
-  spec.version = LucideRails::VERSION
-  spec.authors = ["Victor Gama"]
-  spec.email = ["hey@vito.io"]
+  spec.name = "zestui-lucide-rails"
+  spec.version = ZestuiLucideRails::VERSION
+  spec.authors = ["Victor Gama", "Manu Janardhanan"]
+  spec.email = ["hello@zestui.com"]
 
-  spec.summary = "Ruby on Rails views helper method for rendering Lucide icons."
-  spec.homepage = "https://github.com/heyvito/lucide-rails"
+  spec.summary = "Ruby on Rails views helper method for rendering Lucide icons for use with ZestUI"
+  spec.homepage = "https://github.com/zest-ui/zestui-lucide-rails"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

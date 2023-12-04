@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-RSpec.describe LucideRails::IconProvider do
-  subject { LucideRails::IconProvider }
+RSpec.describe ZestuiLucideRails::IconProvider do
+  subject { ZestuiLucideRails::IconProvider }
 
   shared_examples "a provider" do
     around do |example|
-      LucideRails.provider = provider_name
+      ZestuiLucideRails.provider = provider_name
       example.run
-      LucideRails.provider = nil
+      ZestuiLucideRails.provider = nil
     end
 
     it "returns a known icon" do
